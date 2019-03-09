@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Character = () => {
+const Character = (props) => {
     return (
     <div className='character'>
-    <div className='characterInfo'>Name: {this.state.character.name}</div>
-    <div className='characterInfo'>Hair Color: {this.state.character.hair_color}</div>
-    <div className='characterInfo'>Gender: {this.state.character.gender}</div>
-    <div className='characterInfo'>Birth Year: {this.state.character.birth_year}</div>
+    <div className='characterInfo'>Name: {props.character.name}</div>
+    <div className='characterInfo'>Hair Color: {props.character.hair_color}</div>
+    <div className='characterInfo'>Gender: {props.character.gender}</div>
+    <div className='characterInfo'>Birth Year: {props.character.birth_year}</div>
     </div>
     );
 };
